@@ -1,4 +1,6 @@
 # Write your code here.
+array = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
 def badge_maker(name)
   return "Hello, my name is #{name}."
 end
@@ -22,8 +24,8 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  batch_badge_creator(array).each do
-    counter = 0
+  counter = 0
+  until counter == array.length
     puts "#{batch_badge_creator(array)[counter]}"
     puts "#{assign_rooms(array)[counter]}"
     counter += 1
